@@ -32,7 +32,7 @@ const Carousel = () => {
   }, [currentIndex]);
 
   return (
-    <div className="flex items-center justify-center h-screen ">
+    <div className="flex items-center justify-center h-full p-10 ">
       <button className='relative left-10 transform -translate-y-1/2 rounded-full transition duration-300 ease-in-out hover:bg-gray-300 active:bg-gray-500' onClick={prevSlide}><img className='size-8 ' src={left} alt="" /></button>
       <div className="slide w-3/4 h-[500px] bg-center bg-cover overflow-hidden shadow-2xl" style={{ backgroundImage: `url(${images[currentIndex]})` }}>
         <p>Lorem ipsum dolor sit amet consectetur.</p>

@@ -1,9 +1,9 @@
-import './style.css';
+
 
 const Navbar = () => {
     return (
         <div>
-            <nav className="bg-blue-900 p-4">
+            <nav className="bg-[#084D6E] p-4">
                 <div className='container mx-auto flex flex-row justify-between items-center ps-10'>
                 <img src="" alt="" />
                 </div>
