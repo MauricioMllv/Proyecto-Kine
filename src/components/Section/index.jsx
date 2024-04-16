@@ -1,11 +1,17 @@
+import React, { useState, useEffect } from 'react';
 import images1 from '../../assets/img/enlaces.png'
 
 const Sections = () => {
+
+    const handleImageClick = () => {
+        alert('Solicita tu informe kinesico al correo solicitud@gmail.com');
+      };
+
     return (
         <div className="flex justify-center p-10">
             <div className="grid sm:grid-cols-1 gap-10 md:grid-cols-2">
                 <section className="relative sm:h-3/4 md:h-[100px]">
-                    <a href="#">
+                    <a href="/agendartuhora">
                         <img className="" src={images1} alt="" />
                     
                     <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
@@ -14,7 +20,7 @@ const Sections = () => {
                     </a>
                 </section>
                 <section className="relative sm:h-3/4 md:h-[100px]">
-                    <a href="#">
+                    <a href="">
                         <img className="" src={images1} alt="" />
                     
                     <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
@@ -23,12 +29,13 @@ const Sections = () => {
                     </a>
                 </section>
                 <section className="relative sm:h-3/4 md:h-[100px]">
-                    <a href="#">
+                    <a href="/" onClick={handleImageClick}>
                         <img className="" src={images1} alt="" />
                     
                     <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
                         SOLICITUD INFORMES
-                    </div></a>
+                    </div>
+                    </a>
                 </section>
                 <section className="relative sm:h-3/4 md:h-[100px]">
                     <a href="#">

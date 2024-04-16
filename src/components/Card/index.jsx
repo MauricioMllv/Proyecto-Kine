@@ -4,7 +4,7 @@ const Card = ({ }) => {
     // const truncatedContent = content.split(' ').slice(0, 10).join(' ') + '...';
     // texto a mostrar en card
     return (
-      <div className="bg-white border border-slate-300 p-0.5 m-4 shadow-xl rounded-md md:w-[200px] sm:flex sm:flex-col sm:items-center">
+      <a href="/noticias"><div className="bg-white border border-slate-300 p-0.5 m-4 shadow-xl rounded-md md:w-[200px] sm:flex sm:flex-col sm:items-center">
         <section className='flex md:flex-col md:justify-center'>
             <img src={img} alt="" className=" w-32 h-32 md:w-full md:h-full object-cover rounded-md justify-center" />
         
@@ -15,7 +15,7 @@ const Card = ({ }) => {
         </section>
         
         
-      </div>
+      </div></a>
     );
   };
   
